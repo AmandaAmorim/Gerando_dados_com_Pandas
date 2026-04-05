@@ -6,16 +6,16 @@ fake = Faker('pt-br')
 
 class ClientGenerator:
     def generate_client(self, id_cli):
-        # Gerar primeiro nome e sobrenome separadamente para o e-mail ficar perfeito
+        # Gerar primeiro nome e sobrenome separadamente para o e-mail 
         first_name = fake.first_name()
         last_name = fake.last_name()
-        full_name = f"{first_name}.{last_name}"
+        full_name = f"{first_name} {last_name}"
 
         renda = round(np.random.uniform(1500, 15000), 2)
         score = self._calculate_score(renda)
         
         # Lógica de e-mail corrigida e limpa
-        user = f"{first_name} {last_name}".lower()
+        user = f"{first_name}.{last_name}".lower().replace(" ", "")
         email = f"{remove_accents(user)}@example.com"
 
         # Retornar um dicionário com os dados do cliente
