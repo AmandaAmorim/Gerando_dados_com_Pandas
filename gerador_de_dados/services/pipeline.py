@@ -2,7 +2,7 @@ import pandas as pd
 from gerador_de_dados.modules.client_gen import ClientGenerator
 
 def run_pipeline(n_rows):
-    generator = ClienteGenerator()
+    generator = ClientGenerator()
     data = [generator.generate_client(i) for i in range(1, n_rows + 1)]
 
     df = pd.DataFrame(data)
