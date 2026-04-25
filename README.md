@@ -1,7 +1,3 @@
-Aqui está a versão completa e formatada do seu arquivo `README.md`, consolidando todos os pontos técnicos e a estrutura que desenvolvemos. Este documento foi desenhado para destacar suas habilidades em **POO**, **Engenharia de Dados** e **Desenvolvimento Web** no seu portfólio.
-
----
-
 # Gerando Dados com Pandas 📊
 
 Este projeto é uma ferramenta robusta desenvolvida para a geração de bases de dados financeiros fictícios, mas convincentes, projetada especificamente para apoiar estudos de análise e ciência de dados.
